@@ -46,7 +46,7 @@ const App = () => {
     });
   };
 
-  const handleSignup =  (e) => {
+  const handleSignup = (e) => {
     clearErrors();
     createUserWithEmailAndPassword(auth, email, password).catch((err) => {
       switch (err.code) {
